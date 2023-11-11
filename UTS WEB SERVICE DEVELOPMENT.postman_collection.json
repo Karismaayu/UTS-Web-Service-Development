@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "7b34c1f7-1614-466b-9331-8017e9386f38",
+		"name": "UTS WEB SERVICE DEVELOPMENT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31061975"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_wisata\": \"Lawang Sewu\",\r\n    \"alamat\": \"Semarang\",\r\n    \"deskripsi\": \"Lawang Sewu (Belanda: Het administratiegebouw van de Nederlandsch-Indische Spoorweg-Maatschappij, N.V. te Samarang) (Bahasa Jawa: ꧋ꦭꦮꦁꦱꦺꦮꦸ artinya Seribu Pintu) adalah bangunan perkantoran yang terletak di seberang Tugu Muda, Kota Semarang, Jawa Tengah, Indonesia, yang dibangun sebagai kantor pusat Nederlandsch-Indische Spoorweg Maatschappij (NIS).\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/wisatasemarang/master.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wisatasemarang",
+						"master.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/wisatasemarang/master.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wisatasemarang",
+						"master.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_wisata\": \"2\",\r\n    \"nama_wisata\": \"Sam Poo Kong\",\r\n    \"alamat\": \"Semarang\",\r\n    \"deskripsi\": \"Klenteng Sam Poo Kong. juga dikenal sebagai Klenteng Gedung Batu, adalah klenteng Cina tertua di Semarang, ibukota provinsi Jawa Tengah. Bangunan ini meliputi area seluas 1.020 meter persegi dan dipengaruhi oleh gaya arsitektur Cina dan Jawa abad ke-14. Klenteng ini dicat dengan warna merah yang megah dan dimahkotai dengan atap pagoda berlapis tiga, khas budaya Asia Timur.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/wisatasemarang/master.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wisatasemarang",
+						"master.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_wisata\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/wisatasemarang/master.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wisatasemarang",
+						"master.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
